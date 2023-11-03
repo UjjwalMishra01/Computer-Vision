@@ -1,0 +1,36 @@
+import csv
+import os
+import shutil
+
+# Path to your CSV file containing image paths and labels
+csv_file = "sign_mnist_train.csv"
+
+# Directory where you want to create class directories
+output_dir = "data"
+
+# Assuming the CSV file has a structure like: "image_path,label"
+# Adjust these variables based on the structure of your CSV
+image_path_column = 0  # Index of the image path column
+label_column = 1      # Index of the label column
+
+# Read the CSV file and organize images into class directories
+with open(csv_file, "r") as file:
+    csv_reader = csv.reader(file)
+    next(csv_reader)  # Skip the header row if it exists
+
+    for row in csv_reader:
+        image_path = row[image_path_column]
+        label = row[label_column]
+
+        # Create a directory for the label if it doesn't exist
+        label_dir = os.path.join(output_dir, label)
+        os.makedirs(label_dir, exist_ok=True)
+
+        # Move the image to the corresponding label directory
+        image_filename = os.path.basename(image_path)
+        new_image_path = os.path.join(label_dir, image_filename)
+
+        # Copy or move the image to the class directory
+        shutil.copy(image_path, new_image_path)  # Use shutil.move if you want to move the files
+
+print("Dataset organization completed.")
