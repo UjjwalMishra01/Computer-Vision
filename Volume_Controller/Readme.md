@@ -46,21 +46,28 @@ A circle is drawn between the thumb and index finger to indicate gesture detecti
 - NumPy
 
 ## Setup Instructions
-- Clone the repository:
-git clone https://github.com/yourusername/smart-volume-controller.git
+- Clone the repository:<br/>
+git clone https://github.com/yourusername/smart-volume-controller.git<br/>
 cd smart-volume-controller
 
-- Install dependencies:
+- Install dependencies:<br/>
 pip install opencv-python mediapipe numpy comtypes pycaw
 
-- Run the program:
+
+- Run the program:<br/>
 python smart_volume_controller.py
 
 ## Demo
 Image of Gesture Control:
 Below is an example showing the hand gesture controlling the volume level:
+*Increasing Volume*
+![VC_1](https://github.com/user-attachments/assets/9567e40e-599f-4905-aacb-52a378bfa1bc)
+
+*Decreasing Volume*
+![VC_2](https://github.com/user-attachments/assets/c612e766-b840-4e63-b4c5-d743273ed263)
 
 
 
 Video Demo:
-Watch the video demonstrating how the smart volume controller works.
+https://github.com/user-attachments/assets/6d71e145-de80-49d2-8308-4e44acef61e1
+
