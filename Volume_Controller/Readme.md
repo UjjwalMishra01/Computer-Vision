@@ -59,11 +59,12 @@ python smart_volume_controller.py
 
 ## Demo
 Image of Gesture Control:
-Below is an example showing the hand gesture controlling the volume level:
+Below is an example showing the hand gesture controlling the volume level:<br/>
 *Increasing Volume*
-![VC_1](https://github.com/user-attachments/assets/9567e40e-599f-4905-aacb-52a378bfa1bc)
+![VC_1](https://github.com/user-attachments/assets/9567e40e-599f-4905-aacb-52a378bfa1bc)<br/>
 
-*Decreasing Volume*
+*Decreasing Volume*<br/>
+
 ![VC_2](https://github.com/user-attachments/assets/c612e766-b840-4e63-b4c5-d743273ed263)
 
 
